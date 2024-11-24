@@ -1,0 +1,27 @@
+p{
+    color: blueviolet;
+    font-family: Georgia;
+    font-size: 22px;
+}
+h2{
+    background-color:antiquewhite;
+    color: blue;
+    text-align: justify;
+
+}
+h1{
+    color: antiquewhite;
+    font-style: italic;
+    background-color: black;
+}
+
+.destacados{
+    color:blue ;
+    font-style: italic;
+}
+
+#caja2{
+    width: 500px;
+    height: 200px;
+    background: yellowgreen;
+}
