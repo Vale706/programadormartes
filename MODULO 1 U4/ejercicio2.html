@@ -1,0 +1,25 @@
+/*Ejercicio 2
+Haciendo uso de los bucles, 
+recorrer un array de números y determinar cual es el mayor*/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const nros=[56,98,7,52,63,21,0,36]
+        console.log('Tamaño de Array:',nros.length)
+        let a=0
+        for(let i=0;i<nros.length;i++){
+
+            if(a<nros[i] ){
+             a=nros[i]
+            } else{ continue}
+        }
+        console.log('El mayo es:',a)
+    </script>
+</body>
+</html>
