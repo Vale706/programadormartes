@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 Modulo 2 U1</title>
+    <link rel="stylesheet" href="ejercicio1.css">  <!--Lo vinculo con CSS-->
+</head>
+<body>
+    <div class="cuadrados" style="background-color: #D6C1A6;"></div>
+    <div class="cuadrados" style="background-color: #166866;"></div>
+    <div class="cuadrados" style="background-color: #ED9277;"></div>
+  <script>
+    /*Declara cuadro como un array de elementos que son Clase Cuadros*/
+    const cuadro = document.querySelectorAll('.cuadrados');
+    /*Declara una conts body para acceder al cuerpo de la pagina*/
+    const body = document.body;
+
+    /*Recorre todos los elemetos de clase cuadros*/
+    /*Escucha el evento click*/
+    /*Asigna al body el mismo color del elemento clikeado*/
+    cuadro.forEach(cuadrados=>{
+        cuadrados.addEventListener('click',()=>{
+            body.style.backgroundColor = cuadrados.style.backgroundColor;
+        });
+    });
+
+
+  </script>
+</body>
+</html>
