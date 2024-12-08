@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contador de Caracteres</title>
+</head>
+<body>
+    <!-- /*ROWS: El número de líneas visibles en el control*/ -->
+    <!-- /*COLS: La anchura visible del control de texto, en caracteres de anchura media*/ -->
+  <textarea id="miTextarea" rows="5" cols="30"></textarea>
+
+  <!-- /*SPAN: Sirve para aplicar estilo al texto o agrupar elementos en línea.*/ -->
+  <p>Has escrito <span id="contador">0</span> caracteres.</p>
+
+  <script>
+    // Identifica  y selecciona los nodos por ID
+    const textarea = document.getElementById('miTextarea');
+    const contador = document.getElementById('contador'); //Se crea un párrafo con un span con el id "contador" para mostrar el número de caracteres.
+
+    // addEventListener(type, listener)
+    // Se agrega eventListener al textarea para detectar cualquier cambio
+    textarea.addEventListener('input', () => {
+    // Cada vez que cambia el textarea se actualiza el contador
+      contador.textContent = textarea.value.length;
+    });
+  </script>
+</body>
+</html>
