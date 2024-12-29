@@ -1,0 +1,65 @@
+/*#006312 verde*/
+title {
+    font-family: Raleway;
+    font-style: italic;
+}
+
+.portada {
+    /* background: url(../img/portada.png) no-repeat; */
+    background: url( https://placehold.co/600x100) no-repeat;
+    background-size: cover;
+    height: 50vh;
+    min-height: 600px;
+    color: white;
+}
+
+.fondo-negro-transparente {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    /* Establecemos el contenedor como un contenedor flex */
+    justify-content: center;
+    /* Centramos el contenido horizontalmente */
+    align-items: center;
+    /* Centramos el contenido verticalmente */
+}
+
+small {
+    font-family: Raleway;
+}
+
+.boton {
+    background: #00b31e;
+    background-image: -webkit-linear-gradient(top, #08861d77, #028500);
+    background-image: -moz-linear-gradient(top, #08861d77, #028500);
+    background-image: -ms-linear-gradient(top, #08861d77, #028500);
+    background-image: -o-linear-gradient(top, #08861d77, #028500);
+    background-image: linear-gradient(to bottom, #08861d77, #028500);
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.boton:hover {
+    background: #b4d4c7;
+    background-image: -webkit-linear-gradient(top, #b4d4c7, #5db380);
+    background-image: -moz-linear-gradient(top, #b4d4c7, #5db380);
+    background-image: -ms-linear-gradient(top, #b4d4c7, #5db380);
+    background-image: -o-linear-gradient(top, #b4d4c7, #5db380);
+    background-image: linear-gradient(to bottom, #b4d4c7, #5db380);
+    text-decoration: none;
+}
+
+.brillo {
+    transition: all 0.3s ease; /* Transición suave para el efecto */
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5); /* Sombra blanca suave */
+  
+    &:hover {
+      box-shadow: 0px 0px 20px rgba(255, 255, 255, 1); /* Sombra blanca más intensa al pasar el cursor */
+      transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    }
+  }
