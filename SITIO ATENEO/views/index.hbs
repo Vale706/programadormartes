@@ -1,0 +1,241 @@
+<!-- CONTENEDOR FLUIDO -->
+<div class="container-fluid">
+    <!-- 1RA FILA -->
+    <div id="home" class="row fila scroll_section">
+        <!-- 1RA COL -->
+        <div class="g-col-12 g-md-6 text-center align-text-top">
+            <p>Bienvenidos al</p>
+            <h1><strong>Ateneo Nestor Kirchner</strong> </h1>
+            <p>Un espacio de debate, formación y cultura dedicado a la memoria y el legado de Nestor Kirchner.</p>
+        </div>
+        <div class="g-col-12 g-md-6 columna-imagen ">
+            <img src="../img/portada1.jpg" class="img-fluid img-thumbnail border border-dark-subtle"
+                alt="Imagen de jóvenes en formación política" style="height: auto">
+        </div>
+    </div>
+    <!--  INICIO 2DA FILA -->
+    <div id="nosotros" class="row scroll_section text-center mt-5">
+        <div class="col-md-12">
+            <h1 class="text-center h1Secciones">Sobre Nosotros</h1>
+            <p class=" pnosotros text-center">El Ateneo Nestor Kirchner es un espacio cultural y político dedicado a
+                promover el pensamiento crítico, el
+                debate de ideas y la formación ciudadana, inspirados en los valores y el legado del ex presidente Nestor
+                Kirchner.</p>
+        </div>
+
+    </div>
+    <!--  INICIO 3RA FILA -->
+    <div class="row fila1 scroll_section">
+        <!-- 1RA COL -->
+        <div class="g-col-12 g-md-6 columna-imagen d-flex justify-content-center align-items-center">
+            <img src="../img/nosotros.jpg" class="img-fluid img-thumbnail border border-dark-subtle"
+                alt="Imagen de jóvenes en formación política" style="height: auto">
+        </div>
+        <div class="g-col-12 g-md-6 text-center align-text-top">
+            <h2>Nuestra Misión</h2>
+            <p class=" pmision text-center">Promover espacios de reflexión, debate y formación política y cultural,
+                contribuyendo a la construcción de una sociedad más justa, democrática y soberana.</p>
+            <h2>Nuestra Visión</h2>
+            <p class=" pmision text-center">Ser un referente en la formación política y cultural, generando espacios
+                de encuentro y debate que contribuyan a la construcción de un proyecto nacional y popular.</p>
+            <h2>Nuestros Valores</h2>
+            <p class=" pmision text-center">Compromiso con la democracia, la justicia social, la soberanía nacional,
+                la integración latinoamericana y la memoria histórica.</p>
+        </div>
+    </div>
+
+
+    {{!-- ---------------------------------ACTIVIDADES FALTAN LAS FOTITOS --}}
+
+
+
+    <div id="actividades" class="row alig-items-stretch my-3 fila2 py-4 scroll_section">
+        <div class="col-lg-8 offset-lg-2">
+            <h1 class="h1Secciones">Actividades</h1>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col d-flex"> <!-- ACTIVIDAD 1 -->
+                    <div class="card flex-column">
+                        <img src="../img/debate2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Formación Política</h5>
+                            <p class="card-text pactividades">Cursos, talleres y seminarios sobre historia, economía,
+                                política
+                                nacional e internacional.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex"> <!-- ACTIVIDAD 2 -->
+                    <div class="card flex-column">
+                        <img src="../img/formacion.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Debates y Conferencias</h5>
+                            <p class="card-text pactividades">Espacios de intercambio con especialistas, académicos y
+                                referentes
+                                políticos sobre temas de actualidad.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex"> <!-- ACTIVIDAD 3 -->
+                    <div class="card flex-column">
+                        <img src="../img/debate1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Biblioteca y Centro de Documentación</h5>
+                            <p class="card-text pactividades">Acceso a material bibliográfico, documentos históricos y
+                                publicaciones
+                                especializadas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex"> <!-- ACTIVIDAD 4 -->
+                    <div class="card flex-column">
+                        <img src="../img/ddhh.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Memoria y Derechos Humanos</h5>
+                            <p class="card-text pactividades">Actividades vinculadas a la promoción de la memoria
+                                histórica y los
+                                derechos humanos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  FIN ACTIVIDADES -->
+
+
+    <!--  INICIO FILA NOVEDADES -->
+    <div class="row my-3 ">
+
+        <div id="novedades" class="col-md-5 offset-md-2 py-3 scroll_section"> <!-- 1RA COL -->
+            <h1 class="h1Secciones">Novedades</h1>
+            <ul class="lista-novedades">
+                {{#each novedades}}
+                <li><a href="#" data-bs-toggle="modal" data-bs-target="#Modal{{id}}">
+                    <img src="../img/flecha3.svg">{{titulo}}</a></li>
+                {{/each}}
+            </ul>
+        </div> <!-- FIN 1RA COL -->
+        <!-- INICIO MODAL -->
+        {{#each novedades}}
+        <div class="modal fade" id="Modal{{id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="exampleModalLabel">{{titulo}}</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close">Cerrar</button>
+                    </div>
+                    <div class="modal-body">
+                        <h3>{{subtitulo}}</h3>
+                        <p>{{cuerpo}}</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+        <!-- FIN NOVEDADES -->
+
+
+
+        <!-- INICIO CARRUSEL FRASES  VA DENTRO DE LA FILA DE NOVEDADES-->
+        <div class="col-md-3 my-3">
+            <div class="rounded py-5 testimonios">
+                <h2 class="text-center">Frases más recordadas</h2>
+                <!-- INICIO CARRUSEL -->
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="testimonio">
+                                <h5>Fragmento de su discurso del 25 de mayo de 2003, al asumir el cargo de presidente
+                                </h5>
+                                <p>-"Formo parte de una generación diezmada. Castigada con dolorosas ausencias. Me sumé
+                                    a las luchas políticas creyendo en valores y convicciones a los que no pienso dejar
+                                    en la puerta de entrada de la Casa Rosada."</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item testimonio">
+                            <div class="testimonio">
+                                <h5>En la Cumbre de las Américas de 2005, ante George W. Bush</h5>
+                                <p>"Nuestros pobres, nuestros excluidos, nuestros países, nuestras democracias, ya no
+                                    soportan más que sigamos hablando en voz baja; es fundamental hablar con mucho
+                                    respeto y en voz alta, para construir un sistema que nos vuelva a contener a todos
+                                    en un marco de igualdad y nos vuelva a devolver la esperanza y la posibilidad de
+                                    construir obviamente un mundo distinto y una región que esté a la altura de las
+                                    circunstancias que sé que los presidentes desean y quieren."</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item testimonio">
+                            <div class="testimonio">
+                                <h5>En la Asamblea General de las Naciones Unidas</h5>
+                                <p>"La defensa de los derechos humanos ocupa un lugar central en la nueva agenda de la
+                                    República Argentina. Somos hijos de las Madres y Abuelas de Plaza de Mayo. Y por
+                                    ello insistimos en apoyar de manera permanente el fortalecimiento del sistema
+                                    internacional de protección de los derechos humanos y el juzgamiento y condena de
+                                    quienes los violen".</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <!-- FIN CARRUSEL -->
+            </div>
+        </div> <!-- FIN 2DA COLUMNA -->
+    </div> <!-- FIN 2DA FILA -->
+
+    <div id="conocenos" class="row fila py-4 scroll_section">
+        <div class="col me-5">
+            <div>
+                <h1 class="h1Secciones" style="margin-left: 250px;">Visitanos</h1>
+            </div>
+            <div class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.2059881533205!2d-65.77855592481924!3d-28.473342560211677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942429002c0decad%3A0x306b6fe21638d411!2sAteneo%20N%C3%A9stor%20Kirchner!5e0!3m2!1ses-419!2sar!4v1742562964517!5m2!1ses-419!2sar"
+                    width="800" height="450" style="border: 2px solid  white;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="col me-5">
+            <div>
+                <h1 class="h1Secciones">Comunicate con nosotros</h1>
+            </div>
+            <div class="rounded my-4 border border-primary">
+                <form action="/" method="post">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" name="email" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie
+                            más.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="comentario" class="form-label">Comentario</label>
+                        <input type="text" class="form-control" name="comentario">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+            {{message}}
+
+        </div>
+    </div>
+</div>
+<!-- FIN CONTENEDOR FLUIDO -->
