@@ -1,0 +1,179 @@
+.navbar {
+    background-color: #fff;
+}
+
+.fila {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*Dos columnas de igual ancho*/
+    background-color: #f0f4f7; /*Fondo Gris*/
+}
+
+
+.fila1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*Dos columnas de igual ancho*/
+    background-color: #ffffff; /*Fondo Blanco*/
+    margin-top: 100px;
+}
+
+.fila2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    /*Una columna que ocupa todo el ancho*/
+    background-color: #f0f4f7; /*Fondo Gris*/
+}
+
+.columna-imagen img {
+    max-width: 100% height: auto;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #212529;
+    font-size: 2.5em;
+    margin: 100px auto
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #212529;
+    font-size: 1.0em;
+    margin: 25px auto
+}
+
+p {
+    color: #212529;
+    font-size: 1.5em;
+
+}
+
+.h1Secciones {
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.pnosotros {
+    color: #82898a;
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+.pmision {
+    color: #82898a;
+    font-style: italic;
+    font-size: 1.0em;
+}
+
+.pactividades {
+    color: #82898a;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+.hero {
+    background: url(../img/portada1.jpg) no-repeat;
+    background-size: cover;
+    height: 50vh;
+    min-height: 600px;
+    color: white;
+}
+
+.lista-novedades {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.lista-novedades li {
+    margin: 4px 0;
+}
+
+.lista-novedades li a {
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color:  #82898a;
+    transition: all .2s ease-in-out;
+    display: block;
+}
+
+.lista-novedades li a :hover {
+    color: #212529;
+    background-color: #dadada;
+}
+
+.lista-novedades li a img {
+    width: 120px;
+    height: 50px;
+    filter: grayscale();
+
+}
+
+.lista-novedades li a:hover img {
+    filter: none;
+    margin-right: 1.4rem;
+    opacity: 1;
+}
+
+.testimonios {
+    background-color: #f0f4f7;
+    padding-bottom: 4rem !important;
+}
+
+.testimonio {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.staff {
+    background: #efefef;
+}
+
+.mapa iframe {
+    width: 70%;
+    aspect-ratio: 1.2;
+    display: block;
+    margin: 0 auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.scroll_section {
+    scroll-margin-top: 60px;
+}
+
+footer {
+    background-color: #f0f4f7;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    /* Espacio entre los iconos */
+}
+
+.social-icons li {
+    display: inline;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #333;
+    /* Color de los iconos */
+    font-size: 24px;
+    /* Tamaño de los iconos */
+}
+
+form {
+    margin: 25px; /* Aplica un margen de 20 píxeles a todos los lados */
+}
