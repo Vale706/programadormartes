@@ -134,7 +134,7 @@ router.post('/modificar',async (req, res, next)=>{
       }
     var obj = {
       titulo: req.body.titulo,
-      subtitulos: req.body.subtitulo,
+      subtitulo: req.body.subtitulo,
       cuerpo: req.body.cuerpo,
       img_id
     }
